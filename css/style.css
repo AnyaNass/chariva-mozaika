@@ -204,6 +204,75 @@ a {
 a:hover{
 	color: #65baaf;
 }
+.menu-phone{
+	display: none;
+}
+.phone-btn{
+	background-image: url("../img/icons/cookies.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+	object-fit: cover;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 0;
+	margin: 20px 0 0;
+}
+.overlay-menu {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	right: 0;
+	top: 0;
+	background-color: rgb(100, 185, 174, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+ }
+ .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px; 
+	list-style-type: none;
+}
+ .overlay-content li a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #000;
+	display: block;
+	transition: 0.3s; 
+ }
+ .overlay-content li a:hover {
+	color: #f1f1f1;
+ }
+ .closebtn {
+	position: absolute;
+	top: 5%;
+	right: 10%;
+	background-image: url("cookies.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+	object-fit: cover;
+	border: none;
+	border-radius: 50%;
+	text-align: center;
+ }
+ .closebtn a{
+	color: black;
+	text-decoration: none;
+	font-size: 30px;
+ }
 .logo {
 	margin: -90px 0 0;
 	padding: 0 25px 29px;
@@ -912,8 +981,17 @@ box-shadow: 5px 1px 3px #915b27;
 
 }
 @media (max-width: 375px) {
-	.menu{
+	.settings{
 		display: none;
+	}
+	nav{
+		display: none;
+	}
+	.menu-phone{
+		display: block;
+	}
+	.slider{
+		margin-top: 100px;
 	}
 	.header-top{
 		margin: 0;

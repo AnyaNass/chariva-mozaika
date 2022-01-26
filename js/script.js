@@ -549,3 +549,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+
+/*burger*/
+function openNav() {
+	document.getElementById("myNav").style.width = "100%";
+ }
+ 
+ /* Закрывается при нажатии на символ "x" внутри оверлея */
+ function closeNav() {
+	document.getElementById("myNav").style.width = "0%";
+ }
