@@ -209,17 +209,113 @@ a:hover{
 	padding: 0 25px 29px;
 	border-radius: 50%;
 	background-color: #fff;
+	z-index: 1;
 }
-.banner {
-	width: 100%;
-	height:79vh;
+.slider {
+	position: relative;
 	margin: -40px 0 0;
-	background-image: url("../img/banner/banner.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+ }
+ 
+ .slider__container {
+	overflow: hidden;
+ }
+ 
+ .slider__wrapper {
+	overflow: hidden;
+ }
+ 
+ .slider__items {
+	display: flex;
+	transition: transform 0.5s ease;
+ }
+ 
+ .slider_disable-transition {
+	transition: none;
+ }
+ 
+ .slider__item {
+	flex: 0 0 100%;
+	max-width: 100%;
+	user-select: none;
+	padding: 0 15px;
+ }
+ .banner-main{
+	 width: 100%;
+	 height:79vh;
+	 background-image: url('../img/banner/banner.jpg');
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: cover;
+	 text-align: center;
+ }
+ .banner-two{
+	 width: 100%;
+	 height:79vh;
+	 background-image: url('../img/banner/banner_slider.jpg');
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: cover;
+	 text-align: center;
+ } 
+ .banner-two h3, .banner-two p{
+	color: black;
+ }
+ .banner-two p{
+	 font-size: 40px;
+	 margin: 150px 0 0; 
+ }
+ .slider__control {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	color: #fff;
 	text-align: center;
-}
+	height: 50px;
+	transform: translateY(-50%);
+	background-color: rgb(255, 255, 255, 0.7) ;
+	border-radius: 50%;
+	
+ }
+ 
+ .slider__control_hide {
+	display: none;
+ }
+ 
+ .slider__control[data-slide='prev'] {
+	left: 0;
+ }
+ 
+ .slider__control[data-slide='next'] {
+	right: 0;
+ }
+ 
+ .slider__control:hover,
+ .slider__control:focus {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	background: #fff;
+ }
+ 
+ .slider__control::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+ }
+ 
+ .slider__control[data-slide='prev']::before {
+	background-image: url("../img/banner/prev.png");
+ }
+ 
+ .slider__control[data-slide='next']::before {
+	background-image: url("../img/banner/next.png");
+ }
 .banner-content {
 	padding: 60px 0 0;
 	color: #fff;
