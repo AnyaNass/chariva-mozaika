@@ -757,6 +757,8 @@ button:focus + .hidden-news {
 .address {
 	margin: 60px 0 0;
 	position: relative;
+	width: 100%;
+	overflow: hidden;
 }
 .message-form {
 	display: flex;
@@ -772,10 +774,10 @@ button:focus + .hidden-news {
 	position: absolute;
 	top: 0;
 	height: 100%;
-	width: 99vw;
 	left: 50%;
 	transform: translate(-50%);
-	border: none;	
+	border: none;
+	width: 100vw;
 }
 .message-form-label {
 	text-align: center;
