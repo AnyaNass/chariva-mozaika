@@ -43,11 +43,11 @@ body {
 	font-family: "PFDinTextCompPro";
 	font-weight: 100;
 }
-/*img{
+/* img{
 	object-fit: ;
 	width: 100%;
 	height: 100%;
-}*/
+} */
 .wrapper {
 	min-height: 100%;
 	display: flex;
@@ -76,9 +76,16 @@ body {
 }
 .phone-header .language{
 	padding: 0;
+	margin: -5px 0 0;
+	width: 33.333%;
 }
 .phone-header .logo{
 	margin: 10px 0 0;
+	text-align: center;
+}
+.menu-phone{
+	width: 33.333%;
+	text-align: end;
 }
 .phone-btn{
 	background-image: url("../img/icons/cookies.png");
@@ -91,8 +98,8 @@ body {
 	color: white;
 	border: none;
 	border-radius: 50%;
-	font-size: 15px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 500;
 	padding: 0;
 	margin: 10px 10px 0 0;
 }
@@ -293,14 +300,6 @@ a:hover{
 	margin: -40px 0 0;
  }
  
- .slider__container {
-	overflow: hidden;
- }
- 
- .slider__wrapper {
-	overflow: hidden;
- }
- 
  .slider__items {
 	display: flex;
 	transition: transform 0.5s ease;
@@ -352,27 +351,21 @@ a:hover{
 	text-align: center;
 	height: 50px;
 	transform: translateY(-50%);
-	background-color: rgb(255, 255, 255, 0.7) ;
-	border-radius: 50%;
+	display: none;
  }
  .slider__control_hide {
 	display: none;
  }
- 
  .slider__control[data-slide='prev'] {
 	left: 0;
  }
- 
  .slider__control[data-slide='next'] {
 	right: 0;
  }
- 
  .slider__control:hover,
  .slider__control:focus {
-	color: #fff;
-	text-decoration: none;
-	outline: 0;
-	background: #fff;
+	background-color: hsl(0, 0%, 100%, 0.8);
+	border-radius: 50%;
  }
  
  .slider__control::before {
@@ -431,26 +424,30 @@ h1 {
 	position: absolute;
 	left: -10%;
 	top: 12%;
+	display: none;
 }
 .production-tittle::before{
 	content: url('../img/production/prodution_img_girl.png');
 	position: absolute;
 	right: -10%;
 	top: 0;
+	display: none;
 }
 .production-tittle-text {
 	margin: 0;
 	padding: 0;
-	font-size: 36px;
+	font-size: 25px;
 	color: #959595;
 	position: relative;
 }
 .production-logo {
 	margin: 50px 0 0;
 	padding: 0;
-	position: relative;
 }
-
+.production-logo img{
+	object-fit: cover;
+	width: 100%;
+}
 .donnat {
 	display: inline-block;
 	background-color: #fff;
@@ -988,6 +985,12 @@ box-shadow: 5px 1px 3px #915b27;
 	transform: translate(-50%, 110%);
 
 }
+@media (min-width:450px) {
+	.production-logo img {
+		object-fit: none;
+	 }
+}
+
 @media (min-width:768px) {
 	.phone-header{
 		display: none;
@@ -1011,5 +1014,15 @@ box-shadow: 5px 1px 3px #915b27;
 	}
 	.desctop-header{
 		margin: 0;
+	}
+	.slider__control{
+		display: block;
+	}
+	.production-tittle::after, .production-tittle::before{
+		display: block;
+	}
+
+	.production-tittle-text{
+		font-size: 36px;
 	}
 }
