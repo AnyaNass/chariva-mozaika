@@ -16,15 +16,22 @@
 		</div>
 		<header class="header">
 			<div class="container">
-				<div class="header-top">
-					<div class="contacts">
-						<div class="contact phone_number">
-							<a href="tel:0577383093">(057) 738 30 93,</a>
-							<a href="tel:0577387693">(057) 738 76 93;</a>
-						</div>
-						<div class="contact email">
-							<a href="mailto:charivna@mozaika.com.ua">charivna@mozaika.com.ua</a>
-						</div>
+				<div class="phone-header">
+					<ul class="language">
+						<li>
+							<a href="#">укр</a>
+						</li>
+						<li class="active">
+							<a href="#">рус</a>
+						</li>
+						<li>
+							<a href="#">eng</a>
+						</li>
+					</ul>
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo/logo.png" alt="logo">
+						</a>
 					</div>
 					<div class="menu-phone">
 						<button class="phone-btn" onclick="openNav()">Menu</button>
@@ -34,58 +41,78 @@
 							</div>
 							<ul class="overlay-content">
 									<li>
-										<a href="#">Про нас</a>
+										<a href="#">О нас</a>
 									</li>
-									<li><a href="#">Про нас</a>
-									</li>
-									<li>
-										<a href="#">Сервисы</a>
+									<li><a href="#">Продукция</a>
 									</li>
 									<li>
-										<a href="#">Клиенты</a>
+										<a href="#">Волшебная жизнь</a>
 									</li>
-									<li><a href="#"><a href="#">Контакты</a></a></li>
+									<li>
+										<a href="#">АКЦИИ</a>
+									</li>
+									<li>
+										<a href="#">Клиентам</a>
+									</li>
+									<li>
+										<a href="#">Карьера с нами</a>
+									</li>
+									<li>
+										<a href="#">Контакты</a>
+									</li>
 							</ul>
 						 </div>
 					</div>
-					<div class="settings">
-						<form class="search" action="#" name="search" method="get">
-							<input type="search" placeholder="Поиск">
-							<input type="submit" value="search">
-						</form>
-						<ul class="language">
-							<li>
-								<a href="#">укр</a>
-							</li>
-							<li class="active">
-								<a href="#">рус</a>
-							</li>
-							<li>
-								<a href="#">eng</a>
-							</li>
-						</ul>
-					</div>
 				</div>
-				<nav>
-					<ul class="menu menu-left">
-						<li> <a href="#values">О нас </a></li>
-						<li> <a href="#production"> Продукция</a> </li>
-						<li> <a href="#news">Волшебная жизнь</a> </li>
-						<li> <a href="#">АКЦИИ</a> </li>
-					</ul>
-					<div class="logo">
-						<a href="#">
-							<img src="img/logo/logo.png" alt="logo">
-						</a>
+				<div class="desctop-header">
+					<div class="header-top">
+						<div class="contacts">
+							<div class="contact phone_number">
+								<a href="tel:0577383093">(057) 738 30 93,</a>
+								<a href="tel:0577387693">(057) 738 76 93;</a>
+							</div>
+							<div class="contact email">
+								<a href="mailto:charivna@mozaika.com.ua">charivna@mozaika.com.ua</a>
+							</div>
+						</div>
+						<div class="settings">
+							<form class="search" action="#" name="search" method="get">
+								<input type="search" placeholder="Поиск">
+								<input type="submit" value="search">
+							</form>
+							<ul class="language">
+								<li>
+									<a href="#">укр</a>
+								</li>
+								<li class="active">
+									<a href="#">рус</a>
+								</li>
+								<li>
+									<a href="#">eng</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<ul class="menu menu-right">
-						<li> <a href="#news">НОВОСТИ</a> </li>
-						<li> <a href="#benefits">Клиентам</a> </li>
-						<li> <a href="#"> Карьера с нами</a> </li>
-						<li> <a href="#address">Контакты</a></li>
-					</ul>
-				</nav>
-				
+					<nav>
+						<ul class="menu menu-left">
+							<li> <a href="#values">О нас </a></li>
+							<li> <a href="#production"> Продукция</a> </li>
+							<li> <a href="#news">Волшебная жизнь</a> </li>
+							<li> <a href="#">АКЦИИ</a> </li>
+						</ul>
+						<div class="logo">
+							<a href="#">
+								<img src="img/logo/logo.png" alt="logo">
+							</a>
+						</div>
+						<ul class="menu menu-right">
+							<li> <a href="#news">НОВОСТИ</a> </li>
+							<li> <a href="#benefits">Клиентам</a> </li>
+							<li> <a href="#"> Карьера с нами</a> </li>
+							<li> <a href="#address">Контакты</a></li>
+						</ul>
+					</nav>	
+				</div>
 			</div>
 		</header>
 		<main class="main">
@@ -94,7 +121,7 @@
 					<div class="slider__wrapper">
 						<div class="slider__items">
 							<div class="slider__item banner-main">
-								<div class="banner-content">
+								<div class="banner-content container">
 									<h3>вкус детства</h3>
 									<h1>Завтрак с Тиффани</h1>
 									<p class="banner-text">
@@ -285,7 +312,7 @@
 					</div>
 				</div>
 			</div>
-			<button>
+			<button class="all-btn">
 				читать все новости
 			</button>
 			<div class="hidden-news">
@@ -374,7 +401,7 @@
 					<form class="follow" action="#" name="form" method="get">
 						<label class="follow-label" for="mail">Подписаться на рассылку</label>
 						<input type="mail" name="mail" id="mail" placeholder="Введите ваш e-mail">
-						<button>Подписаться</button>
+						<button class="all-btn">Подписаться</button>
 					</form>
 				</div>
 			</div>
