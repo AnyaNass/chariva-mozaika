@@ -42,6 +42,7 @@ body {
 	box-sizing: border-box;
 	font-family: "PFDinTextCompPro";
 	font-weight: 100;
+	padding: 0;
 }
 /* img{
 	object-fit: ;
@@ -481,15 +482,21 @@ h2 {
 	text-align: center;
 }
 .production-about {
-	margin: 100px 0 0;
+	margin: 30px 0 0;
 	padding: 0 0 35px 0;
 	display: flex;
+	justify-content: center;
 }
 .production-book {
 	background-image: url("../img/production/book/production_book.png");
 	background-repeat: no-repeat;
+	padding: 50px 100px 0 100px;
 	display: flex;
+	justify-content: space-between;
 	position: relative;
+	min-width: 744px;
+	min-height: 427px;
+	display: none;
 }
 .production-book::before {
 	content: url("../img/production/book/zakladka.png");
@@ -506,7 +513,7 @@ h2 {
 	z-index: -1;
 }
 .book-img {
-	padding: 50px 0 120px 120px;
+	margin: 0 0 0 25px;
 }
 .more {
 	display: block;
@@ -519,8 +526,7 @@ h2 {
 	color: #8f5926;
 }
 .book-page {
-	width: 500px;
-	padding: 50px 200px 50px 50px;
+	max-width: 230px;
 }
 .book-page-title p{
 	font-size: 36px;
@@ -603,7 +609,7 @@ h2 {
 .benefits {
 	text-align: center;
 	background-color: hsl(173, 38%, 78%, 0.3);
-	margin:  0;
+	margin: 50px 0 0;
 	padding:  0 0 60px 0;
 	position: relative;
 }
@@ -990,7 +996,19 @@ box-shadow: 5px 1px 3px #915b27;
 		object-fit: none;
 	 }
 }
-
+@media (min-width:748px){
+	.production-about{
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 100px 0 0;
+	}
+	.production-book{
+		display: flex;
+	}
+	.mySlides{
+		margin: 30px 0 0;
+	}
+}
 @media (min-width:768px) {
 	.phone-header{
 		display: none;
@@ -1006,6 +1024,10 @@ box-shadow: 5px 1px 3px #915b27;
 	.banner-text{
 		font-size: 32px;
 		margin: 60px 0 0;
+	}
+	.production-about{
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
 @media (min-width:992px) {
@@ -1024,5 +1046,9 @@ box-shadow: 5px 1px 3px #915b27;
 
 	.production-tittle-text{
 		font-size: 36px;
+	}
+	.production-about{
+		flex-wrap: nowrap;
+		justify-content: space-between;
 	}
 }
