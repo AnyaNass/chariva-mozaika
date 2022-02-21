@@ -318,7 +318,7 @@ a:hover{
 	 background-position: center;
 	 background-size: cover;
 	 text-align: center;
-	 background-color: #48857d;
+	 /* background-color: #48857d; */
  }
  .banner-two{
 	 width: 100%;
@@ -327,7 +327,7 @@ a:hover{
 	 background-position: center;
 	 background-size: cover;
 	 text-align: center;
-	 background-color: #48857d;
+	 /* background-color: #48857d; */
  } 
  .banner-two h3, .banner-two p{
 	color: black;
