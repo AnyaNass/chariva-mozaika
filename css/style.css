@@ -1077,6 +1077,9 @@ box-shadow: 5px 1px 3px #915b27;
 	.footer-menu {
 		justify-content: space-around;
 	}
+	.connect{
+		margin-top: 0;
+	}
 }
 @media (min-width:992px) {
 	h1{
